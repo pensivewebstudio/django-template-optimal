@@ -96,9 +96,10 @@ The implementation is a single page design where the primary funtionallity of th
   </div>
 
 </article>
-<!-- #page-services
+<!-- #page-services -->
 
---------------------------------------------------------------------------
+# Passing Object from the database.
+
 I’ve passed all objects from the database to a single view function for simplicity:
 
 nav_logo = NavLogo.objects
@@ -136,8 +137,6 @@ dict1 = {
 def index(request):
     return render(request, 'home/index.html', dict1
 
-
-------------------------------------------------------------------------------
 
 #Authors and Contributors
 
