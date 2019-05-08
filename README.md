@@ -1,7 +1,5 @@
 
-![Bootstrap 4 Layouts]
-
-#Bootstrap 4 layouts
+<h2>Django and Bootstrap 4</h2>
 
 This repository is a template for a one-page style website using Bootstrap 4 for the front end and Django for the back end. It serves as a template reference for different bootstrap 4 layouts, an example of how Django can be used to create simple, one-page style web applications or to use as a theme for your site as is. The project comes with dummy content in the SQLite database which can be replaced via the admin URL by your own contact for a ready to use site. You can see a live demo of the template at: [github-project-optimal.pensivewebstudio.com](http://www.github-project-optimal.pensivewebstudio.com).
 
@@ -9,9 +7,11 @@ You can see a live demo of a site that I build using this template at: [portfoli
 
 #The Front-End: 
 
-#Structure of the Layouts
+<h3>Structure of the Layouts</h3>
 
 The implementation is a single page design where each html article represents a page of the website, #page-about, #page-services etc.… .. . I’ve named the articles #page-one, #page-two and so on to make the layout generic assuming you would want to rename them as you wish. For example, you could rename the article below: #page-about, if you wanted to make it your about page.
+
+```
 
   <!-- #page-one -->
   <article id="page-one" class="page-icons page-section vertical-padding">
@@ -64,13 +64,18 @@ The implementation is a single page design where each html article represents a 
   <!-- #page-one 
 ------------------------------------------------------------>
 
+```
+
 Most layouts (not the floater layout) also have an optional `<header>`. They should be self-explanatory.
 
-#The Back-End
+<h3>The Back-End</h3>
 
-#Structure of the Django Project
+<h3>Structure of the Django Project</h3>
+
 
 The implementation is a single page design where the primary funtionallity of the project is governed by one app, the “home” app. The static files used by the app are stored in a static folder within this app. The project uses for loops within the templates to display objects from the database allowing you to add and display as many of each type of object as you wish.
+
+```
 
 <!-- #page-services -->
 <article id="page-services" class="page-icons page-section vertical-padding">
@@ -98,10 +103,13 @@ The implementation is a single page design where the primary funtionallity of th
 </article>
 <!-- #page-services -->
 
-# Passing Object from the database.
+```
+
+<h3>Passing Object from the database.<h3>
 
 I’ve passed all objects from the database to a single view function for simplicity:
 
+```
 nav_logo = NavLogo.objects
 site_header = SiteHeader.objects.all()
 about_header = AboutHeader.objects.all()
@@ -137,7 +145,8 @@ dict1 = {
 def index(request):
     return render(request, 'home/index.html', dict1
 
+```
 
-#Authors and Contributors
+<h3>Authors and Contributors</h3>
 
  Ray Villalobos: The front-end of this project is based on a template by Ray built for a LinkedIn learning course called [Bootstrap 4 Layouts: Responsive Single-Page Design](https://www.linkedin.com/learning/bootstrap-4-layouts-responsive-single-page-design/creating-a-bootstrap-4-layout?u=104). You can see a live demo of his project at: [raybo.org/bootstrap4layouts/](http://www.raybo.org/bootstrap4layouts/).
