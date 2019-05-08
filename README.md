@@ -63,7 +63,7 @@ The implementation is a single page design where each html article represents a 
   </article>
   <!-- #page-one 
 ------------------------------------------------------------>
-```
+
 Most layouts (not the floater layout) also have an optional `<header>`. They should be self-explanatory.
 
 #The Back-End
