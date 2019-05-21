@@ -147,6 +147,10 @@ def index(request):
 
 ```
 
+<h3>I have created one user for this project, the root user.</h3>
+<h3>User name: root</h3>
+<h3>Password: root</h3>
+
 <h3>Authors and Contributors</h3>
 
  Ray Villalobos: The front-end of this project is based on a template by Ray built for a LinkedIn learning course called [Bootstrap 4 Layouts: Responsive Single-Page Design](https://www.linkedin.com/learning/bootstrap-4-layouts-responsive-single-page-design/creating-a-bootstrap-4-layout?u=104). You can see a live demo of his project at: [raybo.org/bootstrap4layouts/](http://www.raybo.org/bootstrap4layouts/).
